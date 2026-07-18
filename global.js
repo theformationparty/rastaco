@@ -37,3 +37,26 @@ function ButtonAnimation() {
 setInterval(() => {
     ButtonAnimation();
 }, Math.floor(Math.random() * 1000));
+const elementsToAnimate = document.querySelectorAll(".popsIn");
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.15
+};
+const observerCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animationName = "fadeInPop";
+      entry.target.style.animationDuration = "0.5s";
+      entry.target.style.animationTimingFunction = "ease-out";
+      entry.target.style.animationFillMode = "forwards";
+      entry.target.style.animationIterationCount = "1";
+      observer.unobserve(entry.target);
+    }
+  });
+
+};
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+elementsToAnimate.forEach(element => {
+  observer.observe(element);
+});
