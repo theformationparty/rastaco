@@ -10,6 +10,9 @@ btns.forEach(element => {
         pause_flag = false;
         element.style.color = "rgba(255, 183, 0, 1)";
     });
+    element.addEventListener("click", () => {
+        window.open("https://buy.stripe.com/5kQdR8ahs3y78bAcfFcbC00");
+    });
 });
 document.getElementById("text_logo").addEventListener("click", () => {
     window.location.href = "https://rastaco.org/";
