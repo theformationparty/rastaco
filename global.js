@@ -33,7 +33,7 @@ function ButtonAnimation() {
 }
 setInterval(() => {
     ButtonAnimation();
-}, Math.floor(Math.random() * 1000));
+}, 777);
 const elementsToAnimate = document.querySelectorAll(".popsIn");
 const observerOptions = {
   root: null,
