@@ -20,6 +20,9 @@ document.getElementById("text_logo").addEventListener("click", () => {
 document.getElementById("rasta_nova_span").addEventListener("click", () => {
     window.open("https://rastanova.org/");
 });
+document.getElementById("yt").addEventListener("click", () => {
+    window.open("https://www.youtube.com/@rastacoorg?sub_confirmation=1");
+});
 function ButtonAnimation() {
     btn_flag = !btn_flag;
     if (!pause_flag) {
