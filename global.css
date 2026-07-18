@@ -1,3 +1,10 @@
+.nope {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 html {
     height: 100%;
     margin: 0;
@@ -18,8 +25,8 @@ body {
 }
 header {
     display: flex;
-    min-height: 20%;
-    margin: 5% 5% 0 5%;
+    flex-direction: column;
+    margin: 15% 5% 0 5%;
     padding: 0;
     justify-content: center;
     justify-items: center;
@@ -113,6 +120,13 @@ button {
         cursor: pointer;
         opacity: 0.666;
 }
+#yt {
+    max-width: 15%;
+    margin: 5% 2.5% 2.5% 2.5%;
+}   #yt:hover {
+    cursor: pointer;
+    opacity: 0.666;
+}
 .underline {
     text-decoration: underline;
 }
@@ -132,7 +146,7 @@ button {
         opacity: 0.666;
         color: rgba(255, 183, 0, 1);
 }
-#rasta_nova_logo {
+.rasta_nova_logo {
     display: inline;
     width: 3rem;
     align-self: center;
