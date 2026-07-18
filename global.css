@@ -26,7 +26,7 @@ body {
 header {
     display: flex;
     flex-direction: column;
-    margin: 15% 5% 0 5%;
+    margin: 10% 5% 0 5%;
     padding: 0;
     justify-content: center;
     justify-items: center;
@@ -151,6 +151,10 @@ button {
     width: 3rem;
     align-self: center;
     justify-self: center;
+}
+#wall_of_fame {
+    font-size: 5rem;
+    color: rgba(255, 183, 0, 1);
 }
 @media (max-aspect-ratio: 3/4) {
     body {
