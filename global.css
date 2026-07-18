@@ -47,7 +47,7 @@ footer {
     text-align: center;
 }
 p {
-    margin: 1%;
+    margin: 2%;
 }
 ul {
     display: flex;
@@ -113,7 +113,7 @@ button {
         cursor: pointer;
         opacity: 0.666;
 }
-#insurance {
+.underline {
     text-decoration: underline; 
 }
 .emphasis {
