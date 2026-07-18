@@ -5,7 +5,6 @@ btns.forEach(element => {
     element.addEventListener("mouseenter", () => {
         pause_flag = true;
         element.style.color = "rgba(178, 231, 204, 1)";
-        element.style.letterSpacing = "0.1rem";
     });
     element.addEventListener("mouseleave", () => {
         pause_flag = false;
@@ -23,11 +22,9 @@ function ButtonAnimation() {
     if (!pause_flag) {
         btns.forEach(element => {
             if (btn_flag) {
-                element.style.letterSpacing = "0.1rem";
                 element.style.color = "rgba(255, 183, 0, 1)";
             }
             else {
-                element.style.letterSpacing = "0rem";
                 element.style.color = "rgba(178, 231, 204, 1)";
             }
         });
