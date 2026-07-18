@@ -12,7 +12,6 @@ body {
     padding: 0;
     align-items: center;
     font-size: 4rem;
-    line-height: 1.666;
     color: #FFFFFF;
     background-color: #000000;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -66,19 +65,21 @@ li::marker {
     margin: 0;
 }
 button {
-    width: 30%;
+    width: fit-content;
+    height: fit-content;
+    max-width: 60%;
     margin: 5%;
     padding: 2.5%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
     color: rgba(178, 231, 204, 1);
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(144, 12, 23, 0.85);
     box-shadow: 5px 5px rgba(255, 255, 255, 0.15);
     border-radius: 20px;
     opacity: 1;
 }   button:hover {
         color: rgba(178, 231, 204, 1);
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.15rem;
         background-color: rgba(255, 183, 0, 1);
         box-shadow: 7px 7px rgba(255, 255, 255, 0.15);
         cursor: pointer;
@@ -151,7 +152,7 @@ button {
         max-width: 100%;
     }
     .emphasis {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 @keyframes fadeInPop {
