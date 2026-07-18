@@ -2,7 +2,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact;
 }
 body {
     display: flex;
