@@ -46,6 +46,7 @@ main {
 footer {
     width: 80%;
     padding: 5%;
+    font-size: 2.5rem;
     text-align: center;
     opacity: 0;
 }
@@ -167,9 +168,13 @@ button:hover {
     opacity: 0.666;
     color: rgba(255, 183, 0, 1);
 }
+#header_rasta_nova_logo {
+    width: 3rem;
+    margin-top: 5%;
+}
 .rasta_nova_logo {
     display: inline;
-    width: 3rem;
+    width: 2.5rem;
 }
 hr {
     opacity: 0.25;
@@ -208,6 +213,12 @@ hr {
     .action_tabs button {
         width: 90%;
         max-width: 90%;
+    }
+    footer {
+        font-size: 2rem;
+    }
+    .rasta_nova_logo {
+        width: 2rem;
     }
 }
 @keyframes fadeInPop {
