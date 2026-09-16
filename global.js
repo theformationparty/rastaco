@@ -11,9 +11,7 @@ document.getElementById("sponsor_btn").addEventListener("click", () => {
     window.location.href = "mailto:sponsor@rastaco.org";
 });
 document.getElementById("apply_btn").addEventListener("click", () => {
-    window.alert("EMAIL: apply@rastaco.org");
-    window.open("mailto:apply@rastaco.org");
-    window.location.href = "mailto:apply@rastaco.org";
+    window.alert("COMING JANUARY 2027");
 });
 animatedBtns.forEach(btn => {
     btn.addEventListener("mouseenter", () => {
