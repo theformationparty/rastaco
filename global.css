@@ -9,11 +9,7 @@ html {
     min-height: 100%;
     margin: 0;
     padding: 0;
-    font-family:
-        Impact,
-        Haettenschweiler,
-        'Arial Narrow Bold',
-        sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 body {
     display: flex;
@@ -25,32 +21,25 @@ body {
     font-size: 4rem;
     color: #FFFFFF;
     background-color: #000000;
-    font-family:
-        Impact,
-        Haettenschweiler,
-        'Arial Narrow Bold',
-        sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header {
     display: flex;
     flex-direction: column;
-    margin: 10% 5% 0 5%;
+    margin: 10% 5% 5% 5%;
     padding: 0;
     justify-content: center;
     align-items: center;
     text-align: center;
+    opacity: 0;
 }
-main,
-section {
+main {
     width: 80%;
     padding: 2.5%;
     margin: 0 5% 5% 5%;
     text-align: center;
-    background-color:
-        rgba(0, 255, 0, 0.5);
-    box-shadow:
-        5px 5px
-        rgba(255, 255, 255, 0.15);
+    background-color: rgba(0, 255, 0, 0.5);
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     opacity: 0;
 }
@@ -58,6 +47,7 @@ footer {
     width: 80%;
     padding: 5%;
     text-align: center;
+    opacity: 0;
 }
 p {
     margin: 2%;
@@ -69,31 +59,19 @@ button {
     max-width: 80%;
     margin: 1%;
     padding: 2.5%;
-    font-family:
-        Impact,
-        Haettenschweiler,
-        'Arial Narrow Bold',
-        sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2rem;
-    color:
-        rgba(178, 231, 204, 1);
-    background-color:
-        rgba(144, 12, 23, 0.85);
-    box-shadow:
-        3px 3px
-        rgba(255, 255, 255, 0.15);
+    color: rgba(178, 231, 204, 1);
+    background-color: rgba(144, 12, 23, 0.85);
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.15);
+    border: none;
     border-radius: 20px;
     opacity: 1;
 }
 button:hover {
-    color:
-        rgba(178, 231, 204, 1);
-    padding: 2.75%;
-    background-color:
-        rgba(255, 183, 0, 1);
-    box-shadow:
-        7px 7px
-        rgba(255, 255, 255, 0.15);
+    color: rgba(178, 231, 204, 1);
+    background-color: rgba(255, 183, 0, 1);
+    box-shadow: 7px 7px rgba(255, 255, 255, 0.15);
     cursor: pointer;
     opacity: 0.666;
 }
@@ -105,6 +83,7 @@ button:hover {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    opacity: 0;
 }
 #logo {
     position: fixed;
@@ -121,40 +100,41 @@ button:hover {
     cursor: pointer;
     opacity: 0.666;
 }
-#yt {
-    max-width: 15%;
-    margin:
-        5%
-        2.5%
-        2.5%
-        2.5%;
-}
-#yt:hover {
-    cursor: pointer;
-    opacity: 0.666;
-}
 .tagline {
     margin-top: 5%;
     font-size: 3rem;
-    color:
-        rgba(255, 183, 0, 1);
+    color: rgba(255, 183, 0, 1);
 }
-.donation_bar {
+.video_wrap {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    margin: 2% auto 5% auto;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.15);
+    background-color: #000000;
+}
+.video_wrap iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.action_tabs {
     display: flex;
     flex-direction: row;
-    width: 66.666%;
-    max-width: 75%;
-    justify-content: space-between;
-    align-items: center;
-    justify-self: center;
-    margin:
-        0
-        0
-        10%
-        0;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    width: 100%;
+    margin: 5% auto 2% auto;
 }
-#bar2 {
-    margin: 5% auto;
+.action_tabs button {
+    flex: 1;
+    max-width: 30%;
+    padding: 2rem 1rem;
 }
 .underline {
     text-decoration: underline;
@@ -163,99 +143,33 @@ button:hover {
     font-style: italic;
 }
 .red {
-    color:
-        rgba(255, 0, 0, 1);
+    color: rgba(255, 0, 0, 1);
 }
 .white {
-    color:
-        rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
 }
 .emphasis {
     padding: 1%;
     font-size: 5rem;
     background-color: #000000;
-    box-shadow:
-        5px 5px
-        rgba(255, 255, 255, 0.15);
-    border:
-        2px solid white;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.15);
+    border: 2px solid white;
     border-radius: 10px;
-}
-.emphasis_inline {
-    background-color: #000000;
-    padding:
-        0
-        0.2em;
-}
-.section_title {
-    font-size: 4rem;
-    color:
-        rgba(255, 183, 0, 1);
-    text-decoration: underline;
 }
 .small_text {
     font-size: 2.5rem;
 }
-.business_section {
-    background-color:
-        rgba(255, 183, 0, 0.25);
-    border:
-        2px solid
-        rgba(255, 183, 0, 0.75);
-}
-.donate_btn_form {
-    display: inline-grid;
-    justify-items: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin:
-        10%
-        1%
-        10%
-        1%;
-}
-.donate_btn {
-    font-size: 1.5rem;
-    text-align: center;
-    border: none;
-    border-radius: 0.25rem;
-    min-width: 13.625rem;
-    padding:
-        0
-        2rem;
-    height: 3.5rem;
-    font-weight: bold;
-    background-color: #FFD140;
-    color: #000000;
-    font-family:
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
-    line-height: 1.25rem;
-    cursor: pointer;
-}
-.donate_btn:hover {
-    cursor: pointer;
-    opacity: 0.666;
-}
 #rasta_nova_span {
-    color:
-        rgba(178, 231, 204, 1);
+    color: rgba(178, 231, 204, 1);
 }
 #rasta_nova_span:hover {
     cursor: pointer;
     opacity: 0.666;
-    color:
-        rgba(255, 183, 0, 1);
+    color: rgba(255, 183, 0, 1);
 }
 .rasta_nova_logo {
     display: inline;
     width: 3rem;
-}
-#wall_of_fame {
-    font-size: 4rem;
-    color:
-        rgba(255, 183, 0, 1);
 }
 hr {
     opacity: 0.25;
@@ -270,22 +184,14 @@ hr {
     #text_logo {
         width: 90%;
     }
-    #yt {
-        max-width: 25%;
-    }
-    button {
-        font-size: 1.75rem;
-        max-width: 95%;
-    }
-    main,
-    section {
+    main {
         width: 87.5%;
         padding: 4%;
     }
-    .emphasis {
-        font-size: 3rem;
+    .video_wrap {
+        width: 100%;
     }
-    .section_title {
+    .emphasis {
         font-size: 3rem;
     }
     .small_text {
@@ -294,8 +200,12 @@ hr {
     .tagline {
         font-size: 2rem;
     }
-    .donation_bar {
+    .action_tabs {
         flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .action_tabs button {
         width: 90%;
         max-width: 90%;
     }
@@ -303,12 +213,10 @@ hr {
 @keyframes fadeInPop {
     from {
         opacity: 0;
-        transform:
-            scale(0.5);
+        transform: scale(0.5);
     }
     to {
         opacity: 1;
-        transform:
-            scale(1);
+        transform: scale(1);
     }
 }
