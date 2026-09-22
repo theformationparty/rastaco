@@ -1,4 +1,4 @@
-const PAYPAL_URL = "https://www.paypal.com/ncp/payment/BQD7PF6RFQW4E";
+const PAYPAL_URL = "";
 let btn_flag = true;
 let pause_flag = false;
 const animatedBtns = document.querySelectorAll("button");
